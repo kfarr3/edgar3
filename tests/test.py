@@ -1,3 +1,13 @@
-import edgar as ed
+# %%
+from edgar3 import edgar
+import datetime
 
-print("index: " + ed.get_daily_index(2018, 1, 2))
+ed = edgar.edgar()
+
+date_index = datetime.datetime(2018, 1, 2)
+
+# %%
+print("index: " + ed.get_full_listing_as_pd(date_index))
+
+
+# %%

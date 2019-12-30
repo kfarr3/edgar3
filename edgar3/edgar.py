@@ -65,6 +65,7 @@ class edgar:
             self._known_daily_index[key] = index
             return index
 
+    # ('https://www.sec.gov/Archives/edgar/full-index/2018/QTR1/master.idx', True)
     def _get_full_listing_url(self, date: datetime.datetime) -> Tuple[str, bool]:
         # master.idx
         file_name = "master.idx"
@@ -77,6 +78,7 @@ class edgar:
 
         return ("", False)
 
+    # ('https://www.sec.gov/Archives/edgar/daily-index/2018/QTR1/master.20180102.idx',True)
     def _get_daily_listing_url(self, date: datetime.datetime) -> Tuple[str, bool]:
         # master.20180102.idx
         file_name = "master.{year}{month:02d}{day:02d}.idx".format(year=date.year, month=date.month, day=date.day)
@@ -89,6 +91,8 @@ class edgar:
 
         return ("", False)
 
+    # Gets the daily index of avalable filings
+    # 98246|TIFFANY & CO|4|2018-01-12|edgar/data/98246/0000098246-18-000049.txt
     def get_full_listing(self, date: datetime.datetime) -> str:
         listing_url, status = self._get_full_listing_url(date)
         if status is False:
