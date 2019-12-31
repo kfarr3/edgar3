@@ -54,3 +54,68 @@ def test_get_full_index():
     assert len(index_dict["directory"]["item"]) == 28
     assert index_dict["directory"]["name"] == "full-index/2018/QTR1/"
     assert list(index_dict["directory"]["item"][0].keys()) == ["last-modified", "name", "type", "href", "size"]
+
+
+def test_get_daily_index():
+    ed = edgar.edgar()
+    index_dict = ed._get_daily_index(datetime.date(2018, 1, 1))
+
+    assert len(index_dict) == 1
+    assert list(index_dict.keys()) == ["directory"]
+    assert list(index_dict["directory"].keys()) == ["item", "name", "parent-dir"]
+    assert len(index_dict["directory"]["item"]) == 310
+    assert index_dict["directory"]["name"] == "daily-index/2018/QTR1/"
+    assert list(index_dict["directory"]["item"][0].keys()) == ["last-modified", "name", "type", "href", "size"]
+
+
+def test_get_full_listing_url():
+    ed = edgar.edgar()
+    assert ed._get_full_listing_url(datetime.date(2018, 1, 1)) == ("https://www.sec.gov/Archives/edgar/full-index/2018/QTR1/master.idx", True)
+
+
+def test_get_daily_listing_url():
+    ed = edgar.edgar()
+    assert ed._get_daily_listing_url(datetime.date(2018, 1, 2)) == ("https://www.sec.gov/Archives/edgar/daily-index/2018/QTR1/master.20180102.idx", True)
+
+
+def test_get_full_listing():
+    ed = edgar.edgar()
+    document = ed.get_full_listing(datetime.date(2018, 1, 1))
+    rows = document.split("\n")
+    # get the middle row
+    row = rows[int(len(rows) / 2)].split("|")
+    assert len(row) == 5
+
+
+def test_get_daily_listing():
+    ed = edgar.edgar()
+    document = ed.get_daily_listing(datetime.date(2018, 1, 2))
+    rows = document.split("\n")
+    # get the middle row
+    row = rows[int(len(rows) / 2)].split("|")
+    assert len(row) == 5
+
+
+def test_get_full_listing_as_pd():
+    ed = edgar.edgar()
+    df = ed.get_full_listing_as_pd(datetime.date(2018, 1, 1))
+    assert df.shape[1] == 6
+
+
+def test_get_daily_listing_as_pd():
+    ed = edgar.edgar()
+    df = ed.get_daily_listing_as_pd(datetime.date(2018, 1, 2))
+    assert df.shape[1] == 6
+
+
+def test_get_filing_list():
+    ed = edgar.edgar()
+    df = ed.get_filing_list([1000097], datetime.date(2018, 1, 1), datetime.date(2018, 2, 1))
+    assert df.shape == (1, 6)
+    assert list(df["CIK"]) == [1000097]
+
+
+def test_get_filing():
+    ed = edgar.edgar()
+    raw_filing = ed.get_filing("edgar/data/1000097/0000919574-18-000008.txt")
+    assert len(raw_filing) > 0

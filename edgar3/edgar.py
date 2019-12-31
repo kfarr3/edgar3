@@ -2,6 +2,7 @@
 
 import requests
 import pandas as pd
+from io import StringIO
 import datetime
 from typing import Tuple, Dict, Any, List
 import json
@@ -148,7 +149,7 @@ class edgar:
                 raise Exception("Failed header check: Data Seperator")
             skip = 7
 
-        df = pd.read_csv(pd.compat.StringIO(listing), sep="|", index_col=False, skiprows=skip, names=["CIK", "Company Name", "Form Type", "Date Filed", "File Name"])
+        df = pd.read_csv(StringIO(listing), sep="|", index_col=False, skiprows=skip, names=["CIK", "Company Name", "Form Type", "Date Filed", "File Name"])
         df["Date Found"] = int("{year}{month:02d}{day:02d}".format(year=date.year, month=date.month, day=date.day))
         return df
 

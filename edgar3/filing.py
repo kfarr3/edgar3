@@ -8,9 +8,12 @@ class Filing:
     documents = None  # type: Dict[str, str]
 
     def __init__(self, filing: str):
-        self.header, filing = self._extract_section(filing, "<SEC-HEADER>", "</SEC-HEADER>")
+        self.header, filing2 = self._extract_section(filing, "<SEC-HEADER>", "</SEC-HEADER>")
 
-        document, filing = self._extract_section(filing, "<DOCUMENT>", "</DOCUMENT>")
+        if self.documents is None:
+            self.documents = {}
+
+        document, filing = self._extract_section(filing2, "<DOCUMENT>", "</DOCUMENT>")
         while len(document) > 0:
             tag = self._extract_tag(document, "<TYPE>")
             self.documents[tag] = document
