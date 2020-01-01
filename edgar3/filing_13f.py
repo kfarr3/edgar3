@@ -1,12 +1,11 @@
-from filing import Filing
-from xml.etree import ElementTree
-from ElementTree import Element
+from .filing import Filing
+import xml.etree.ElementTree as ET
+from typing import Dict
 
 
 class Filing_13F(Filing):
     def __init__(self, filing: str):
         super().__init__(filing)
-        print("initted with header of length", len(self.header))
 
     def __repr__(self):
         ret = "13F Filings with\n"
@@ -15,7 +14,7 @@ class Filing_13F(Filing):
             ret += " Document ({0}) of Length: {1}\n".format(key, len(self.documents[key]))
         return ret
 
-    def processInformationTable(self):
+    def process_information_table(self):
         try:
             document = self.documents["INFORMATION TABLE"]
         except KeyError:
@@ -24,7 +23,7 @@ class Filing_13F(Filing):
         xml_doc, ext = self._extract_section(document, "<XML>", "</XML>")
         if len(xml_doc) == 0:
             return False
-        root = ElementTree.fromstring(xml_doc)
+        root = ET.fromstring(xml_doc)
         namespace = {"ns1": "http://www.sec.gov/edgar/document/thirteenf/informationtable"}
         self.holdings = []
         for child in root:
@@ -38,30 +37,36 @@ class Filing_13F(Filing):
 
 
 class Holding:
-    def __init__(self, root: Element, namespace):
+    def __init__(self, root: ET.Element, namespace: Dict[str, str]):
         try:
-            self.nameOfIssuer = root.find("ns1:nameOfIssuer", namespace).text
-            self.titleOfClass = root.find("ns1:titleOfClass", namespace).text
-            self.cusip = root.find("ns1:cusip", namespace).text
-            self.value = int(root.find("ns1:value", namespace).text) * 1000
-            # self.shares = []
+            self.nameOfIssuer = self._get_element_text(root, "ns1:nameOfIssuer", namespace, "")
+            self.titleOfClass = self._get_element_text(root, "ns1:titleOfClass", namespace, "")
+            self.cusip = self._get_element_text(root, "ns1:cusip", namespace, "")
+            self.value = int(self._get_element_text(root, "ns1:value", namespace, "0")) * 1000
 
             shares = root.find("ns1:shrsOrPrnAmt", namespace)
+
             # not sure if there's a way for additional shares types to be encoded here
             # so we will throw an error if it's not 2
-            if len(shares) != 2:
+            if shares is None or len(shares) != 2:
                 raise ValueError(self.nameOfIssuer + ": shrsOrPrnAmt != 2")
 
-            self.sshPrnamt = int(shares.find("ns1:sshPrnamt", namespace).text)
-            self.sshPrnamtType = shares.find("ns1:sshPrnamtType", namespace).text
+            self.number = int(self._get_element_text(shares, "ns1:sshPrnamt", namespace, "0"))
+            self.type = self._get_element_text(shares, "ns1:sshPrnamtType", namespace, "")
 
         except ValueError:
             raise ValueError(self.nameOfIssuer)
         except AttributeError:
             raise ValueError(self.nameOfIssuer)
 
+    def _get_element_text(self, root: ET.Element, path: str, namespace: Dict[str, str], default: str):
+        x = root.find(path, namespace)
+        if x is None:
+            return default
+        return x.text
+
     def __repr__(self):
-        ret = self.nameOfIssuer + "(${0}:{1} @ {2})".format(self.value, self.sshPrnamt, self.value / self.sshPrnamt)
+        ret = self.nameOfIssuer + "(${0}:{1} @ {2})".format(self.value, self.number, self.value / self.number)
         return ret
 
 
