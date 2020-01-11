@@ -6,8 +6,8 @@ authors = ["Ken Farr <ken@farr.ai>"]
 
 [tool.poetry.dependencies]
 python = "^3.7"
-requests = "^2.22.0"
 pandas = "^0.25.3"
+httpx = "^0.11.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"

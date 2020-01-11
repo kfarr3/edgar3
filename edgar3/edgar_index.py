@@ -51,7 +51,7 @@ class edgar_index:
         if key in self._known_full_index:
             return self._known_full_index[key]
         else:
-            index = json.loads(requests.get(self._get_full_index_url(date)).text)
+            index = json.loads(httpx.get(self._get_full_index_url(date)).text)
             self._known_full_index[key] = index
             return index
 
@@ -62,7 +62,7 @@ class edgar_index:
         if key in self._known_daily_index:
             return self._known_daily_index[key]
         else:
-            index = json.loads(requests.get(self._get_daily_index_url(date)).text)
+            index = json.loads(httpx.get(self._get_daily_index_url(date)).text)
             self._known_daily_index[key] = index
             return index
 
@@ -98,13 +98,13 @@ class edgar_index:
         listing_url, status = self._get_full_listing_url(date)
         if status is False:
             return ""
-        return requests.get(listing_url).text
+        return httpx.get(listing_url).text
 
     def get_daily_listing(self, date: datetime.datetime) -> str:
         listing_url, status = self._get_daily_listing_url(date)
         if status is False:
             return ""
-        return requests.get(listing_url).text
+        return httpx.get(listing_url).text
 
     def get_full_listing_as_pd(self, date: datetime.datetime) -> pd.DataFrame:
         listing = self.get_full_listing(date)
@@ -170,4 +170,4 @@ class edgar_index:
         return df
 
     def get_filing(self, url: str):
-        return requests.get("{archives_url}/{url}".format(archives_url=self.archives_url, url=url)).text
+        return httpx.get("{archives_url}/{url}".format(archives_url=self.archives_url, url=url)).text
