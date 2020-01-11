@@ -1,8 +1,8 @@
 [tool.poetry]
 name = "edgar3"
-version = "0.1.0"
-description = ""
-authors = ["Your Name <you@example.com>"]
+version = "1.1"
+description = "Simple 13F Edgar Extractor"
+authors = ["Ken Farr <ken@farr.ai>"]
 
 [tool.poetry.dependencies]
 python = "^3.7"
