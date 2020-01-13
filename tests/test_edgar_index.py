@@ -1,13 +1,13 @@
-from edgar3 import __version__, edgar
+from edgar3 import __version__, edgar_index
 import datetime
 
 
 def test_version():
-    assert __version__ == "edgar3 version 1.1"
+    assert __version__ == "edgar3 version 1.1.2"
 
 
 def test_get_quarter():
-    ed = edgar.edgar()
+    ed = edgar_index.edgar_index()
     assert ed._get_quarter(1) == 1
     assert ed._get_quarter(2) == 1
     assert ed._get_quarter(3) == 1
@@ -25,7 +25,7 @@ def test_get_quarter():
 
 
 def test_get_full_index_url():
-    ed = edgar.edgar()
+    ed = edgar_index.edgar_index()
     assert ed._get_full_index_url(datetime.date(2018, 1, 1)) == "https://www.sec.gov/Archives/edgar/full-index/2018/QTR1/index.json"
     assert ed._get_full_index_url(datetime.date(2018, 8, 1)) == "https://www.sec.gov/Archives/edgar/full-index/2018/QTR3/index.json"
     assert ed._get_full_index_url(datetime.date(2019, 2, 1)) == "https://www.sec.gov/Archives/edgar/full-index/2019/QTR1/index.json"
@@ -35,7 +35,7 @@ def test_get_full_index_url():
 
 
 def test_get_daily_index_url():
-    ed = edgar.edgar()
+    ed = edgar_index.edgar_index()
     assert ed._get_daily_index_url(datetime.date(2018, 1, 1)) == "https://www.sec.gov/Archives/edgar/daily-index/2018/QTR1/index.json"
     assert ed._get_daily_index_url(datetime.date(2018, 8, 1)) == "https://www.sec.gov/Archives/edgar/daily-index/2018/QTR3/index.json"
     assert ed._get_daily_index_url(datetime.date(2019, 2, 1)) == "https://www.sec.gov/Archives/edgar/daily-index/2019/QTR1/index.json"
@@ -45,7 +45,7 @@ def test_get_daily_index_url():
 
 
 def test_get_full_index():
-    ed = edgar.edgar()
+    ed = edgar_index.edgar_index()
     index_dict = ed._get_full_index(datetime.date(2018, 1, 1))
 
     assert len(index_dict) == 1
@@ -57,7 +57,7 @@ def test_get_full_index():
 
 
 def test_get_daily_index():
-    ed = edgar.edgar()
+    ed = edgar_index.edgar_index()
     index_dict = ed._get_daily_index(datetime.date(2018, 1, 1))
 
     assert len(index_dict) == 1
@@ -69,17 +69,17 @@ def test_get_daily_index():
 
 
 def test_get_full_listing_url():
-    ed = edgar.edgar()
+    ed = edgar_index.edgar_index()
     assert ed._get_full_listing_url(datetime.date(2018, 1, 1)) == ("https://www.sec.gov/Archives/edgar/full-index/2018/QTR1/master.idx", True)
 
 
 def test_get_daily_listing_url():
-    ed = edgar.edgar()
+    ed = edgar_index.edgar_index()
     assert ed._get_daily_listing_url(datetime.date(2018, 1, 2)) == ("https://www.sec.gov/Archives/edgar/daily-index/2018/QTR1/master.20180102.idx", True)
 
 
 def test_get_full_listing():
-    ed = edgar.edgar()
+    ed = edgar_index.edgar_index()
     document = ed.get_full_listing(datetime.date(2018, 1, 1))
     rows = document.split("\n")
     # get the middle row
@@ -88,7 +88,7 @@ def test_get_full_listing():
 
 
 def test_get_daily_listing():
-    ed = edgar.edgar()
+    ed = edgar_index.edgar_index()
     document = ed.get_daily_listing(datetime.date(2018, 1, 2))
     rows = document.split("\n")
     # get the middle row
@@ -97,25 +97,25 @@ def test_get_daily_listing():
 
 
 def test_get_full_listing_as_pd():
-    ed = edgar.edgar()
+    ed = edgar_index.edgar_index()
     df = ed.get_full_listing_as_pd(datetime.date(2018, 1, 1))
     assert df.shape[1] == 6
 
 
 def test_get_daily_listing_as_pd():
-    ed = edgar.edgar()
+    ed = edgar_index.edgar_index()
     df = ed.get_daily_listing_as_pd(datetime.date(2018, 1, 2))
     assert df.shape[1] == 6
 
 
 def test_get_filing_list():
-    ed = edgar.edgar()
+    ed = edgar_index.edgar_index()
     df = ed.get_filing_list([1000097], datetime.date(2018, 1, 1), datetime.date(2018, 2, 1))
     assert df.shape == (1, 6)
     assert list(df["CIK"]) == [1000097]
 
 
 def test_get_filing():
-    ed = edgar.edgar()
+    ed = edgar_index.edgar_index()
     raw_filing = ed.get_filing("edgar/data/1000097/0000919574-18-000008.txt")
     assert len(raw_filing) > 0
