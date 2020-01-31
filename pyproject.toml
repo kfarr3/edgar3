@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "edgar3"
-version = "1.1.2"
+version = "1.1.5"
 description = "Simple 13F Edgar Extractor"
 authors = ["Ken Farr <ken@farr.ai>"]
 
@@ -8,6 +8,7 @@ authors = ["Ken Farr <ken@farr.ai>"]
 python = "^3.7"
 pandas = "^0.25.3"
 httpx = "^0.11.0"
+backoff = "^1.10.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"

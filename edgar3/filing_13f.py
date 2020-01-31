@@ -51,7 +51,7 @@ class Holding:
             if shares is None or len(shares) != 2:
                 raise ValueError(self.nameOfIssuer + ": shrsOrPrnAmt != 2")
 
-            self.number = int(self._get_element_text(shares, "ns1:sshPrnamt", namespace, "0"))
+            self.number = int(float(self._get_element_text(shares, "ns1:sshPrnamt", namespace, "0")))
             self.type = self._get_element_text(shares, "ns1:sshPrnamtType", namespace, "")
 
         except ValueError:
