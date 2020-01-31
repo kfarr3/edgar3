@@ -27,11 +27,11 @@ class Filing_13F(Filing):
         namespace = {"ns1": "http://www.sec.gov/edgar/document/thirteenf/informationtable"}
         self.holdings = []
         for child in root:
-            try:
-                holding = Holding(child, namespace)
-                self.holdings.append(holding)
-            except ValueError as error:
-                print("Error processing Holding:", error)
+            # try:
+            holding = Holding(child, namespace)
+            self.holdings.append(holding)
+        # except ValueError as error:
+        #    print("Error processing Holding:", error)
 
         return True
 
@@ -42,7 +42,7 @@ class Holding:
             self.nameOfIssuer = self._get_element_text(root, "ns1:nameOfIssuer", namespace, "")
             self.titleOfClass = self._get_element_text(root, "ns1:titleOfClass", namespace, "")
             self.cusip = self._get_element_text(root, "ns1:cusip", namespace, "")
-            self.value = int(self._get_element_text(root, "ns1:value", namespace, "0")) * 1000
+            self.value = int(float(self._get_element_text(root, "ns1:value", namespace, "0"))) * 1000
 
             shares = root.find("ns1:shrsOrPrnAmt", namespace)
 

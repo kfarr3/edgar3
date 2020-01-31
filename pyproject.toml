@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "edgar3"
-version = "1.1.5"
+version = "1.1.6"
 description = "Simple 13F Edgar Extractor"
 authors = ["Ken Farr <ken@farr.ai>"]
 
