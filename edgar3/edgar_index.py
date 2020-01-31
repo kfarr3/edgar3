@@ -6,6 +6,7 @@ from io import StringIO
 import datetime
 from typing import Tuple, Dict, Any, List
 import json
+import backoff
 
 
 class edgar_index:
@@ -169,5 +170,6 @@ class edgar_index:
                     df = pd.concat([df, df_test], ignore_index=True)
         return df
 
+    @backoff.on_exception(backoff.expo, (httpx.exceptions.NetworkError))
     def get_filing(self, url: str):
         return httpx.get("{archives_url}/{url}".format(archives_url=self.archives_url, url=url)).text
