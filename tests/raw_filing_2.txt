@@ -1,0 +1,257 @@
+-----BEGIN PRIVACY-ENHANCED MESSAGE-----
+Proc-Type: 2001,MIC-CLEAR
+Originator-Name: webmaster@www.sec.gov
+Originator-Key-Asymmetric:
+ MFgwCgYEVQgBAQICAf8DSgAwRwJAW2sNKK9AVtBzYZmr6aGjlWyK3XmZv3dTINen
+ TWSM7vrzLADbmYQaionwg5sDW3P6oaM5D3tdezXMm7z1T+B+twIDAQAB
+MIC-Info: RSA-MD5,RSA,
+ EbQgQ8k3oBuRmNadk8xcCEWTg+JA+3yvzWnQDoPoahPqcrZEmO7AtgqiR1p7CZ9o
+ gXzBzGFScEoIipnNDsFlvQ==
+
+<SEC-DOCUMENT>0000002230-00-000003.txt : 20000216
+<SEC-HEADER>0000002230-00-000003.hdr.sgml : 20000216
+ACCESSION NUMBER:		0000002230-00-000003
+CONFORMED SUBMISSION TYPE:	13F-HR
+PUBLIC DOCUMENT COUNT:		1
+CONFORMED PERIOD OF REPORT:	19991231
+FILED AS OF DATE:		20000215
+
+FILER:
+
+	COMPANY DATA:	
+		COMPANY CONFORMED NAME:			ADAMS EXPRESS CO
+		CENTRAL INDEX KEY:			0000002230
+		STANDARD INDUSTRIAL CLASSIFICATION:	 []
+		IRS NUMBER:				134912740
+		STATE OF INCORPORATION:			MD
+		FISCAL YEAR END:			1231
+
+	FILING VALUES:
+		FORM TYPE:		13F-HR
+		SEC ACT:		
+		SEC FILE NUMBER:	028-00597
+		FILM NUMBER:		545229
+
+	BUSINESS ADDRESS:	
+		STREET 1:		SEVEN ST PAUL ST STE 1140
+		CITY:			BALTIMORE
+		STATE:			MD
+		ZIP:			21202
+		BUSINESS PHONE:		4107525900
+
+	MAIL ADDRESS:	
+		STREET 1:		7 ST PAUL STREET SUITE 1140
+		CITY:			BALTIMORE
+		STATE:			MD
+		ZIP:			21202
+</SEC-HEADER>
+<DOCUMENT>
+<TYPE>13F-HR
+<SEQUENCE>1
+<TEXT>
+
+<PAGE>
+
+                               UNITED STATES
+                    SECURITIES AND EXCHANGE COMMISSION
+                          Washington, D.C. 20549
+                                 Form 13F
+                            Form 13F COVER PAGE
+Report for the Calendar Year or Quarter Ended: December 31, 1999
+Check here if Amendment [ ]; Amendment Number: ____
+This Amendment (Check only one.): [ ] is a restatement.
+[ ] adds new holdings entries.
+
+Institutional Investment Manager Filing this Report:
+Name:_____The Adams Express Company____
+Address: _7 St. Paul Street, Suite 1140
+__________Baltimore, MD 21202__________
+__________________________________________
+Form 13F File Number: 28-597_________
+The institutional investment manager filing this report and the
+person by whom it is signed hereby represent that the person
+signing the report is authorized to submit it, that all
+information contained herein is true, correct and complete, and
+that it is understood that all required items, statements,
+schedules, lists, and tables, are considered integral parts of
+this form.
+Person Signing this Report on Behalf of Reporting Manager:
+Name: ___Christine M. Griffith_
+Title: __Assistant Treasurer___
+Phone: __(401) 752-5900________
+Signature, Place, and Date of Signing:
+__(signed)_Christine M. Griffith Baltimore, Md. February 14, 2000
+[Signature] [City, State] [Date]
+Report Type (Check only one.):
+[X] 13F HOLDINGS REPORT. (Check here if all holdings of this
+reporting manager are reported in this report.)
+[ ] 13F NOTICE. (Check here if no holdings reported are in this
+report, and all holdings are reported by other reporting
+manager(s).)
+[ ] 13F COMBINATION REPORT. (Check here if a portion of the
+holdings for this reporting manager are reported in this
+report and a portion are reported by other reporting
+manager(s).)
+List of Other Managers Reporting for this Manager:
+[If there are no entries in this list, omit this section.]
+Form 13F File Number Name
+28-____________ ________________________________
+[Repeat as necessary.]
+<PAGE>
+
+Form 13F SUMMARY PAGE
+Report Summary:
+Number of Other Included Managers: __________0____
+Form 13F Information Table Entry Total: ____117______
+Form 13F Information Table Value Total: $_2,167______
+(thousands)
+List of Other Included Managers:
+Provide a numbered list of the name(s) and Form 13F file
+number(s) of all institutional investment managers with respect
+to which this report is filed, other than the manager filing this
+report.
+[If there are no entries in this list, state "NONE" and omit the
+column headings and list entries.]
+No. Form 13F File Number Name
+____ 28- NONE____________ ________________________
+[Repeat as necessary.
+<PAGE>
+<TABLE>
+<CAPTION>
+                           FORM 13F INFORMATION TABLE
+
+COLUMN 1                              COLUMN 2   COLUMN 3   COLUMN 4       COLUMN 5       COL. 6  COLUMN 7         COLUMN 8
+- -------------------------------       --------   --------   --------  ------------------  ------- --------  ----------------------
+                                      TITLE OF               VALUE                        INVSTMT   OTHER
+NAME OF ISSUER                          CLASS     CUSIP     (x$1000)                      DSCRETN MANAGERS
+<S>                                   <C>       <C>        <C>                            <C>     <C>
+                                                                      SHARES/   SH/ PUT/                       VOTING AUTHORITY
+                                                                      PRIN.AMT  PRN CALL
+                                                                      <C>       <C> <C>
+                                                                                                              SOLE    SHARED NONE
+                                                                                                            <C>       <C>    <C>
+ABBOTT LABORATORIES                   COM        002824100      9,260   255,000 SH        SOLE                255,000
+ALZA CORPORATION                      COM        022615108     11,772   340,000 SH        SOLE                340,000
+AMBAC FINANCIAL GROUP, INC.           COM        023139108     19,810   379,600 SH        SOLE                379,600
+AMBAC FINANCIAL GROUP, INC.           CALL       023139908        783    15,000     CALL
+AMERICAN HOME PRODUCTS CORP.          COM        026609107     16,681   425,000 SH        SOLE                425,000
+AMERICAN HOME PRODUCTS CORP.          CALL       026609907      1,037    25,000     CALL
+AMERICAN INT'L. GROUP INC.            COM        026874107     54,738   506,250 SH        SOLE                506,250
+ANNUITY AND LIFE RE (HOLDINGS), LTD.  COM        G03910109     18,288   700,000 SH        SOLE                700,000
+ASSOC. FIRST CAPITAL CORP. SER. A     COM        046008108     15,003   546,800 SH        SOLE                546,800
+AVERY DENNISON CORP.                  COM        053611109     16,557   227,200 SH        SOLE                227,200
+BMC SOFTWARE INC.                     COM        055921100     21,983   275,000 SH        SOLE                275,000
+BMC SOFTWARE INC.                     PUT        055921950      1,599    20,000     PUT
+BP AMOCO PLC SPN                      ADRS       055662104     17,794   300,000 ADR       SOLE                300,000
+BANK ONE CORP                         COM        06443A103     10,560   330,000 SH        SOLE                330,000
+BAXTER INTERNATIONAL                  COM        071813109     16,017   255,000 SH        SOLE                255,000
+BELLSOUTH CORP.                       COM        079860102     20,598   440,000 SH        SOLE                440,000
+BLACK & DECKER CORP.                  COM        091797100     15,675   300,000 SH        SOLE                300,000
+BLACK HILLS CORP.                     COM        092113109     12,314   555,000 SH        SOLE                555,000
+CALPINE CORP.                         COM        131347106      2,240    35,000 SH        SOLE                 35,000
+CALPINE CAP TRST 5.75% CV HIGH TIDES  PFD        131346207      8,141   125,000 SH        SOLE                125,000
+CANADIAN NATIONAL RAILWAY.            COM        136375102      1,590    60,000 SH        SOLE                 60,000
+CANADIAN NATIONAL RAILWAY 5.25% PFD   QUIDS      136375409        630    15,000 SH        SOLE                 15,000
+CHIRON CORP.                          COM        170040109     23,306   550,000 SH        SOLE                550,000
+CINERGY CORP.                         COM        172474108      7,181   300,000 SH        SOLE                300,000
+CICSO SYSTEMS, INC.                   COM        17275R102     98,287   917,500 SH        SOLE                917,500
+COCA-COLA CO.                         COM        191216100      9,903   170,000 SH        SOLE                170,000
+CONSOLIDATED PAPERS INC.              COM        209759109     13,043   410,000 SH        SOLE                410,000
+CORNING, INC.                         COM        219350105     59,311   460,000 SH        SOLE                460,000
+CORNING, INC                          CALL       219350905      1,934    15,000     CALL
+DST SYSTEMS INC.                      COM        233326107      5,341    70,000 SH        SOLE                 70,000
+DST SYSTEMS INC                       CALL       236326907      1,831    24,000     CALL
+DEAN FOODS CO.                        COM        242361103     11,925   300,000 SH        SOLE                300,000
+DELPHI AUTOMOTIVE, INC.               COM        247126105     10,868   690,000 SH        SOLE                690,000
+DOVER CORP.                           COM        260003108     11,798   260,000 SH        SOLE                260,000
+ELAN CORP. PLC                        ADRS       284131208     25,665   870,000 SH        SOLE                870,000
+ENDESA, S.A.                          ADRS       29258N107      7,065   350,000 SH        SOLE                350,000
+ENGELHARD CORP.                       COM        292845104      6,040   320,000 SH        SOLE                320,000
+ENRON CORP.                           COM        293561106     22,188   500,000 SH        SOLE                500,000
+ERICSSON(L.M.) TEL. 4.25% CV DUE 2000 DEBS       294821509      2,250   120,000 PRN       SOLE                120,000
+ERISSON (L.M.) TELEPHONE CO.          COM        294821400     49,266   750,000 SH        SOLE                750,000
+EXXON MOBIL CORP.                     COM        30231G102     12,763   158,418 SH        SOLE                158,418
+EXXON MOBIL CORP.                     CALL       30231G952      1,208    15,000
+FEDERAL HOME LOAN MORTGAGE CORP.      COM        313400301     16,943   360,000 SH        SOLE                360,000
+FINANCIAL SEC. ASSURANCE HOLDINGS LTD COM        31769P100     16,022   307,387 SH        SOLE                307,387
+FIRST DATA CORP.                      COM        319963104     16,962   343,980 SH        SOLE                343,980
+FORT JAMES CORP.                      COM        347471104     13,688   500,000 SH        SOLE                500,000
+GENERAL ELECTRIC CO.                  COM        369604103    101,361   655,000 SH        SOLE                655,000
+GILLETTE CO.                          COM        375766102     18,086   439,120 SH        SOLE                439,120
+GLOBAL CROSSING LTD                   COM        G3921A100     46,125   922,500 SH        SOLE                922,500
+GLOBAL CROSSING LTD                   CALL       G3921A900      1,000    20,000     PUT
+GREENPOINT FINANCIAL CORP.            COM        395384100     10,358   435,000 SH        SOLE                435,000
+HEWLETT-PACKARD CO.                   COM        428236103     22,750   200,000 SH        SOLE                200,000
+HEWLETT-PACKARD CO.                   PUT        428236953      1,706    15,000     PUT
+HOUSTON IND. INC. 7% CV DUE 7/1/2000  DECS       442161204     18,075   150,000 SH        SOLE                150,000
+INTEL CORP.                           COM        458140100     27,986   340,000 SH        SOLE                340,000
+INTERSTATE BAKERIES CORP.             COM        46072H108      2,501   138,000 SH        SOLE                138,000
+INVESTORS FINANCIAL SERV. CORP.       COM        461915100     20,700   450,000 SH        SOLE                450,000
+IVEX PACKAGING CORP.                  COM        465855104      9,000   900,000 SH        SOLE                900,000
+JOHNSON & JOHNSON                     COM        478160104     10,257   110,000 SH        SOLE                110,000
+JOHNSON & JOHNSON                     PUT        478160954        932    10,000     PUT
+LILLY (ELI) & CO.                     COM        532457108     19,285   290,000 SH        SOLE                290,000
+LILLY (ELI) & CO.                     CALL       532457908      1,284    20,000     CALL
+LUCENT TECHNOLOGIES INC.              COM        549463107     38,073   508,920 SH        SOLE                508,920
+LUCENT TECHNOLOGIES INC.              CALL       549463907      1,297    20,000     CALL  SOLE
+MCI WORLDCOM, INC.                    COM        55268B106     32,633   615,000 SH        SOLE                615,000
+MCI WORLDCOM, INC.                    CALL       55268B906        796    15,000     CALL
+MCDONALD'S CORP.                      COM        580135101     22,575   560,000 SH        SOLE                560,000
+MEAD CORP.                            COM        582834107     17,375   400,000 SH        SOLE                400,000
+MEDIAONE GROUP INC.                   COM        58440J104     11,522   150,000 SH        SOLE                150,000
+MEADIAONE GROUP, INC. 6.25% DUE 2001  PIES       58440J401      9,180    85,000 SH        SOLE                 85,000
+MELLON BANK CORP.                     COM        585509102     14,306   420,000 SH        SOLE                420,000
+MERCK & CO., INC.                     COM        589331107     20,156   300,000 SH        SOLE                300,000
+MOTOROLA, INC.                        COM        620076109     23,836   161,874 SH        SOLE                161,874
+NATIONAL CITY CORP.                   COM        635405103      3,790   160,000 SH        SOLE                160,000
+NEXTEL COMMUNICATIONS, INC.           COM        65332V103     61,875   600,000 SH        SOLE                600,000
+NEXTEL COMMUNICATIONS, INC.           CALL       65333H907      1,031    10,000     CALL
+NOKIA CORP. PFD                       ADRS       654902204     92,150   485,000 SH        SOLE                485,000
+NOKIA CORP. PFD. ADR                  CALL       654902204        190    10,000     CALL  SOLE
+NORTEL NETWORKS LTD                   COM        656569100     76,760   760,000 SH        SOLE                760,000
+NORTEL NETWORKS LTD                   CALL       656569900      1,515    15,000     CALL
+NORTHWESTERN CORP.                    COM        668074107     11,000   500,000 SH        SOLE                500,000
+ORACLE CORP                           COM        68389X105     33,058   295,000 SH        SOLE                295,000
+ORACLE CORP                           PUT        68389X955        560     5,000     PUT
+OWENS-ILLINOIS INC.                   COM        690768403     13,408   535,000 SH        SOLE                535,000
+PALL CORP.                            COM        696429307     12,938   600,000 SH        SOLE                600,000
+PEOPLES HERITAGE FINANCIAL GROUP      COM        711147108      7,140   474,000 SH        SOLE                474,000
+PEPSICO, INC.                         COM        713448108     10,399   295,000 SH        SOLE                295,000
+PETROLEUM & RESOURCES CORP.           COM        716549100     39,025 1,210,085 SH        SOLE              1,210,085
+PHARMACIA  & UPJOHN INC.              COM        716941109     13,950   310,000 SH        SOLE                310,000
+PROVIDENT BANKSHARES CORP.            COM        743859100      5,261   303,875 SH        SOLE                303,875
+QRS CORP.                             COM        74726X105     52,762   502,500 SH        SOLE                502,500
+QWEST COMMUNICATIONS INT'L. INC.      COM        749121109     34,056   792,012 SH        SOLE                792,012
+QWEST COMM. INTL INC 5.75% DUE 2003   TRENDS     74912L105      8,844   125,000 SH        SOLE                125,000
+QWEST COMMUNICATIONS INT'L. INC       CALL       749121909      1,935    45,000     CALL
+RCN CORP                              COM        749361101      8,366   172,500 SH        SOLE                172,500
+RALSTON PURINA CO. 7% DUE 2000        COM        751227401      6,581   180,000 SH        SOLE                180,000
+ROYAL DUTCH PETROLEUM CO.             GLDR1.25   780257804      4,845    80,000 SH        SOLE                 80,000
+RYDER SYSTEM INC.                     COM        783549108     10,875   445,000 SH        SOLE                445,000
+SBC COMMUNICATIONS INC.               COM        78387G103     38,413   787,960 SH        SOLE                787,960
+SAPIENT CORP                          COM        803062108     80,334   570,000 SH        SOLE                570,000
+SAPIENT CORP                          PUT        803062958     11,275    80,000     PUT
+SCHLUMBERGER, LTD                     COM        806857108      4,973    88,400 SH        SOLE                 88,400
+SMITHKLINE BEECHAM PLC                ADRS       832378301     16,672   260,000 SH        SOLE                260,000
+SOLECTRON CORP.                       COM        834182107     95,125 1,000,000 SH        SOLE              1,000,000
+STERLING COMMERCE INC.                COM        859205106     19,550   575,000 SH        SOLE                575,000
+TECO ENERGY, INC                      COM        872375100      5,569   300,000 SH        SOLE                300,000
+TIFFANY & COMPANY                     COM        886547108     17,850   200,000 SH        SOLE                200,000
+TIME WARNER TELECOM                   COM        887319101     20,200   404,500 SH        SOLE                404,500
+TIME WARNER TELECOM                   PUT        887319951      1,253    60,000     PUT
+TRANSOCEAN SEDCO FOREX INC.           COM        G90078109        577    17,114 SH        SOLE                 17,114
+UNITED WATER RESOURCES, INC.          COM        913190104     20,512   600,000 SH        SOLE                600,000
+VODAFONE AIRTOUCH PLC                 ADRS       92857T107     14,231   287,500 SH        SOLE                287,500
+WACHOVIA CORP.                        COM        929771103     12,920   190,000 SH        SOLE                190,000
+WELLS FARGO & CO.                     COM        949746101     22,241   550,000 SH        SOLE                550,000
+WILLIAMS COMMUNICATIONS GROUP INC.    COM        969455104      6,366   220,000 SH        SOLE                220,000
+WILLIAMS COMPANIES, INC.              COM        969457100     15,281   500,000 SH        SOLE                500,000
+WILMINGTON TRUST CORP.                COM        971807102     10,133   210,000 SH        SOLE                210,000
+                                                            2,166,802
+
+
+</TABLE>
+</TEXT>
+</DOCUMENT>
+</SEC-DOCUMENT>
+-----END PRIVACY-ENHANCED MESSAGE-----

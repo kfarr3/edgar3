@@ -1,1 +1,1 @@
-__version__ = "edgar3 version 1.1.6"
+__version__ = "edgar3 version 1.1.8"
