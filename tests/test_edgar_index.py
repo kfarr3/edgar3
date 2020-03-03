@@ -3,7 +3,7 @@ import datetime
 
 
 def test_version():
-    assert __version__ == "edgar3 version 1.1.8"
+    assert __version__ == "edgar3 version 1.2.0"
 
 
 def test_get_quarter():

@@ -1,6 +1,4 @@
-from edgar3 import edgar as ed
 from edgar3.filing_13f import Filing_13F
-from typing import Dict
 
 
 def test_filing_13f_holdings_1():

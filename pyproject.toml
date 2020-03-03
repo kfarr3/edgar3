@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "edgar3"
-version = "1.1.8"
+version = "1.2.0"
 description = "Simple 13F Edgar Extractor"
 authors = ["Ken Farr <ken@farr.ai>"]
 
@@ -16,7 +16,6 @@ flake8 = "^3.7.9"
 mypy = "^0.761"
 black = "^19.10b0"
 ipython = "^7.11.1"
-pyodbc = "^4.0.30"
 
 [build-system]
 requires = ["poetry>=0.12"]
