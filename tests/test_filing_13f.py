@@ -81,8 +81,8 @@ def test_filing_13f_client_1():
     assert fil.state_or_country == "NY"
     assert fil.zip_code == "10019"
     assert fil.cik == "0001000097"
-    assert fil.period_of_report == "12-31-2017"
-    assert fil.signature_date == "02-14-2018"
+    assert fil.period_of_report == "2017-12-31"
+    assert fil.signature_date == "2018-02-14"
 
 
 def test_filing_13f_client_2():
@@ -100,8 +100,8 @@ def test_filing_13f_client_2():
     assert fil.state_or_country == "MD"
     assert fil.zip_code == "21202"
     assert fil.cik == "0000002230"
-    assert fil.period_of_report == "12-31-1999"
-    assert fil.signature_date == "02-15-2000"
+    assert fil.period_of_report == "1999-12-31"
+    assert fil.signature_date == "2000-02-15"
 
 
 def test_filing_13f_client_3():
@@ -120,5 +120,5 @@ def test_filing_13f_client_3():
     assert fil.state_or_country == "WI"
     assert fil.zip_code == "54301"
     assert fil.cik == "0000007789"
-    assert fil.period_of_report == "12-31-2018"
-    assert fil.signature_date == "02-13-2019"
+    assert fil.period_of_report == "2018-12-31"
+    assert fil.signature_date == "2019-02-13"
